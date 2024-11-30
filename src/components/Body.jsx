@@ -3,12 +3,15 @@ import React from "react";
 import Login from "./Login";
 import Header from "./Header";
 import Browse from "./Browse";
+import { Button } from "semantic-ui-react";
+import ButtonExampleAnimated from "./ButtonExampleAnimated";
+import RatingExampleDisabled from "./RatingExampleDisabled";
 
 const Body = () => {
   const router = createBrowserRouter([
     {
       path: "/log",
-      element: <div>Hi!!!</div>,
+      element: <RatingExampleDisabled/>,
     },
     {
       path: "/header",
@@ -21,6 +24,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/hi",
+      element: <ButtonExampleAnimated />,
     },
   ])
 
